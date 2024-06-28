@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://kit.fontawesome.com/877fdb1861.js" crossorigin="anonymous"></script>
+    <!-- AOS Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Jarallax Library -->
+    <script src="https://cdn.jsdelivr.net/npm/jarallax@1.12.5/dist/jarallax.min.js"></script>
+
+    <!-- Fancybox Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 txt-clr">
+          <div class="col-md-3 mb-2 mb-md-0">
+            <a href="/logo" class="d-inline-flex link-body-emphasis text-decoration-none deactive">
+              <img src="./images/logo.png" alt="logo" width="130px" style="margin-top:10px">
+            </a>
+          </div>
+    
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="nav-link px-2 ">Home</a></li>
+            <li><a href="plan.html" class="nav-link px-2">Plan</a></li>
+            <li><a href="care.html" class="nav-link px-2">Care</a></li>
+            <li><a href="#" class="nav-link px-2">Contact</a></li>
+          </ul>
+    
+          <div class="col-md-3 text-end reg" >
+            <a class=" btn btn-outline-primary  me-2" href="#registration" id="registerBtn" style="font-size: medium;" >Register</a>
+            
+          </div>
+        </header>
+      </div>
+
+      <div class="row pb-1 pb-sm-3 pb-lg-4 " >
+        <div class="col-lg-4 pe-xxl-4">
+
+          <!-- Page title -->
+          <h2 class="display-2 contact">Contact</h2>
+          <p class="fs-lg pb-4 mb-0 mb-sm-2 contact">Get in touch with us by completing the below form or call us now</p>
+        </div>
+        <div class="col-lg-8 col-xl-7 offset-xl-1">
+
+          <!-- Contact form -->
+          <form class="row g-4 needs-validation contact" novalidate="">
+            <div class="col-sm-6">
+              <label class="form-label fs-base" for="name">Name</label>
+              <input class="form-control form-control-lg bg" type="text" placeholder="Your name" required="" id="name" fdprocessedid="38f16">
+              <div class="invalid-feedback">Please enter your name!</div>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label fs-base" for="email">Email</label>
+              <input class="form-control form-control-lg bg" type="email" placeholder="Email address" required="" id="email" fdprocessedid="dwana3">
+              <div class="invalid-feedback">Please provide a valid email address!</div>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label fs-base" for="phone">Phone</label>
+              <input class="form-control form-control-lg bg" type="text" placeholder="Phone number" id="phone" fdprocessedid="b4a6kd">
+            </div>
+            <div class="col-sm-6 sel">
+              <label class="form-label fs-base" for="location">Location</label><br/>
+              <select class="form-select form-select-lg bg" id="location" fdprocessedid="zea1t">
+                <option value="All locations">All locations</option>
+                <option value="Asia and Pacific">coimbatore</option>
+                <option value="Central Europe">chennai</option>
+                <option value="Eastern Europe">Erode</option>
+                <option value="North America">tiruppur</option>
+                <option value="South America">palani</option>
+              </select>
+            </div>
+            <div class="col-sm-12">
+              <label class="form-label fs-base" for="message">How can we help?</label>
+              <textarea class="form-control form-control-lg bg" rows="5" placeholder="Enter your message here..." required="" id="message"></textarea>
+              <div class="invalid-feedback">Please enter your message!</div>
+            </div>
+            <div class="col-sm-12">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="agree">
+                <label class="form-check-label" for="agree">I agree to the <a class="nav-link d-inline fs-normal text-decoration-underline p-0" href="#">Terms &amp; Conditions</a></label>
+              </div>
+            </div>
+            <div class="col-sm-12 pt-2">
+              <button class="btn btn-lg btn-primary" type="submit" fdprocessedid="h2vd1">Send a request</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 p-4 text-center">
+        <p>&copy; 2024 Gym. All Rights Reserved.</p>
+        <p>Follow us on:
+            <span class="footer-icons">
+                <a href="#" class="text-white ml-2"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-white ml-2"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#" class="text-white ml-2"><i class="fa-brands fa-square-x-twitter"></i></a>
+            </span>
+        </p>
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+       
+        $(".hover").mouseleave(
+        function () {
+            $(this).removeClass("hover");
+        }
+        );
+        
+       AOS.init();
+
+      // Initialize Jarallax
+        jarallax(document.querySelectorAll('[data-jarallax-element]'), {
+            speed: 0.2
+        });
+
+        // Initialize Fancybox
+        $('[data-fancybox]').fancybox();
+    </script>
+</body>
+</html>

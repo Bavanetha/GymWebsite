@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://kit.fontawesome.com/877fdb1861.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 txt-clr">
+          <div class="col-md-3 mb-2 mb-md-0">
+            <a href="/logo" class="d-inline-flex link-body-emphasis text-decoration-none deactive">
+              <img src="./images/logo.png" alt="logo" width="130px" style="margin-top:10px">
+            </a>
+          </div>
+    
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#home" class="nav-link px-2 ">Home</a></li>
+            <li><a href="plan.html" class="nav-link px-2">Plan</a></li>
+            <li><a href="care.html" class="nav-link px-2">Care</a></li>
+            <li><a href="contact.html" class="nav-link px-2">Contact</a></li>
+          </ul>
+    
+          <div class="col-md-3 text-end reg" >
+            <a class=" btn btn-outline-primary  me-2" href="#registration" id="registerBtn" style="font-size: medium;" >Register</a>
+            
+          </div>
+        </header>
+      </div>
+
+      <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Welcome to FitFusion</h1>
+                <p class="lead">Join our community and get access to top-notch equipment, diverse classes, and experienced trainers to help you stay fit and healthy. Whether you're a beginner or a pro, we have something for everyone.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" id="registerBtn">Get Started</button>
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden">
+                <img class="rounded-lg-3" src="/images/gym1.jpg" alt="FitFusion Gym" width="750">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Registration Form -->
+    <section id="registration" class="container mt-5" style="display: none;">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" class="form-control" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="package">Package</label>
+                <select class="form-control" id="package">
+                    <option>Basic</option>
+                    <option>Standard</option>
+                    <option>Premium</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </section>
+
+    
+ 
+      
+
+    <!-- Packages Section -->
+    <section id="packages" class="container mt-5">
+        <h2 class="text-center mb-4">Our Packages</h2>
+        <div class="row">
+            <!-- Basic Package -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center border-primary card1">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="my-0">Basic</h4>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title pricing-card-title">$20 <small class="text-muted">/ month</small></h2>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Access during off-peak hours</li>
+                            <li>Basic gym equipment</li>
+                            <li>Locker room access</li>
+                            <li>1 guest pass per month</li>
+                        </ul>
+                        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for Basic</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Standard Package -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center border-success card1">
+                    <div class="card-header bg-success text-white">
+                        <h4 class="my-0">Standard</h4>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title pricing-card-title">$35 <small class="text-muted">/ month</small></h2>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Access at all times</li>
+                            <li>Group classes included</li>
+                            <li>Advanced gym equipment</li>
+                            <li>2 guest passes per month</li>
+                        </ul>
+                        <button type="button" class="btn btn-lg btn-block btn-outline-success">Sign up for Standard</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Premium Package -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center border-danger card1">
+                    <div class="card-header bg-danger text-white">
+                        <h4 class="my-0">Premium</h4>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title pricing-card-title">$50 <small class="text-muted">/ month</small></h2>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>All Standard benefits</li>
+                            <li>Personal trainer sessions</li>
+                            <li>Nutrition and diet consultation</li>
+                            <li>Unlimited guest passes</li>
+                        </ul>
+                        <button type="button" class="btn btn-lg btn-block btn-outline-danger">Sign up for Premium</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Timings Section -->
+    <section id="timings" class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center mb-4" data-aos="fade-up">
+                <h2 class="display-5">Gym Timings</h2>
+            </div>
+            <div class="col-md-6 mb-3" data-aos="fade-right" data-aos-duration="1000">
+                <div class="alert alert-primary text-center" role="alert">
+                    <h4 class="alert-heading" data-aos="fade-up" data-aos-duration="800">Monday - Friday</h4>
+                    <p class="mb-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">6:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3" data-aos="fade-left" data-aos-duration="1000">
+                <div class="alert alert-success text-center" role="alert">
+                    <h4 class="alert-heading" data-aos="fade-up" data-aos-duration="800">Saturday - Sunday</h4>
+                    <p class="mb-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">8:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        
+    </section>
+    
+
+    <section class="disp_flex">
+        <figure class="snip1321"><img src="./images/gym8.jpg" alt="gym-image1"/>
+            <figcaption><i class="ion-upload"></i>
+            <h4>Cardio    </h4>
+            <h2>Equipment</h2>
+            </figcaption><a href="#"></a>
+        </figure>
+        <figure class="snip1321 hover"><img src="./images/gym7.jpg" alt="gym-image2"/>
+            <figcaption><i class="ion-stats-bars"></i>
+            <h4>Strength </h4>
+            <h2>Training</h2>
+            </figcaption><a href="#"></a>
+        </figure>
+        <figure class="snip1321"><img src="./images/gym6.jpg" alt="gym-image3"/>
+            <figcaption><i class="ion-share"></i>
+            <h4>Yoga    </h4>
+            <h2>Classes</h2>
+            </figcaption><a href="#"></a>
+        </figure>
+    </section>
+    
+
+    <!-- Offers Section -->
+    <section id="offers" class="container mt-5" data-aos="fade-up">
+        <h2 class="text-center mb-4">Offers</h2>
+        <div class="card offer-card mx-auto" style="max-width: 600px;" data-aos="zoom-in">
+            <div class="card-body">
+                <h5 class="card-title" data-aos="fade-right">Summer Special</h5>
+                <p class="card-text" data-aos="fade-left">Get 20% off on all memberships for the first 3 months!</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Gym Gears Section -->
+    <section class="overflow-hidden pt-2 pt-sm-3 pt-md-4 pt-lg-3 pb-1 pb-sm-3 pb-md-4 pb-lg-5">
+        <div class="container position-relative py-5 my-lg-3 my-xl-4 my-xxl-5">
+          <div class="position-absolute aos-init aos-animate" style="margin-left: -12.7%;" data-aos="zoom-in" data-aos-duration="500" data-aos-offset="300" data-disable-parallax-down="lg">
+            <svg class="text-warning d-none d-lg-block " width="744" height="744" viewBox="0 0 744 744" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="372" cy="372" r="372"></circle>
+            </svg>
+          </div>
+          <div class="d-none d-xxl-block" style="height: 190px;"></div>
+          <div class="d-none d-lg-block d-xxl-none" style="height: 150px;"></div>
+          <div class="row justify-content-center justify-content-lg-start position-relative z-2">
+            <div class="col-sm-10 col-md-8 col-lg-5 col-xl-4 text-center text-lg-start aos-init aos-animate" data-aos="fade-up" data-aos-duration="850" data-aos-offset="120" data-disable-parallax-down="lg">
+              <div class="d-none d-lg-block" data-bs-theme="light" style="margin-left: 60px;;">
+                <h2 class="display-5 mb-4">Welcome to our Gym Gear Shop</h2>
+                <p class="fs-lg text-dark pb-3 pb-sm-4 mb-lg-0" data-bs-theme="light">We offer a wide range of high-quality gym gears to help you achieve your fitness goals.</p>
+                <a href="#" class="btn btn-primary">Shop Now</a>
+            </div>
+              
+            </div>
+          </div>
+          <div class="d-none d-xl-block" style="margin-top: -240px;"></div>
+          <div class="d-none d-lg-block d-xl-none" style="margin-top: -160px;"></div>
+          <div class="d-flex position-relative z-2 mb-3">
+            <div class="flex-xxl-shrink-0 position-relative z-2 aos-init aos-animate" style="max-width: 540px; margin-top: 26%; margin-right: -9.6%;" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400" data-disable-parallax-down="lg">
+              <img class="rounded-3 mt-n5 mt-lg-0 d-block d-dark-mode-none" src="./images/yoga.webp" alt="Page" style="box-shadow: 1.875rem .625rem 5rem rgba(65,81,98, .2);" width="450px" height="500vh"><img class="border rounded-3 mt-n5 mt-lg-0 d-none d-dark-mode-block" src="./images/yoga.webp" alt="Page" style="box-shadow: 1.875rem .625rem 5rem rgba(0,0,0, .2);" width="10px">
+            </div>
+            <div class="flex-xxl-shrink-0 position-relative z-1 aos-init aos-animate" style="max-width: 481px; margin-top: 17.6%; margin-right: -8.5%;" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-disable-parallax-down="lg">
+              <img class="rounded-3 mt-n5 mt-lg-0 d-block d-dark-mode-none" src="./images/resistant bands.jpg" alt="Page" style="box-shadow: 1.875rem .625rem 5rem rgba(65,81,98, .2);" width="450px" height="500vh"><img class="border rounded-3 mt-n5 mt-lg-0 d-none d-dark-mode-block" src="./images/resistant bands.jpg" alt="Page" style="box-shadow: 1.875rem .625rem 5rem rgba(0,0,0, .2);" width="10px">
+            </div>
+            <div class="flex-xxl-shrink-0 aos-init aos-animate" style="max-width: 510px;" data-aos="fade-up" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="lg">
+              <img class="rounded-3 d-block d-dark-mode-none" src="./images/kettlebell.jpg" alt="Page" style="box-shadow: 1.875rem .625rem 5rem rgba(65,81,98, .2);" width="450px" height="500vh"><img class="border rounded-3 d-none d-dark-mode-block" src="./images/kettlebell.jpg" alt="Page" style="box-shadow: 1.875rem .625rem 5rem rgba(0,0,0, .2);" width="10px">
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Nutrition & Supplements Section -->
+    <section class="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5">
+        <h2 class="display-5 text-center pt-2 pt-sm-3 pt-md-4 pt-lg-5 pb-lg-3 mt-xxl-2 mb-0">Around Customizer</h2>
+      
+        <!-- Nutrition -->
+        <div class="row align-items-center py-4 mt-2 mt-sm-3 mt-md-4 mb-2 mb-md-3 mb-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="600" data-aos-offset="300" data-disable-parallax-down="md">
+          <div class="col-md-6 col-lg-7 order-md-2 d-flex justify-content-end">
+            <img class="d-dark-mode-none" src="./images/nutrition.jpg" width="593" alt="Nutrition">
+            <img class="d-none d-dark-mode-block" src="./images/nutrition.jpg" width="593" alt="Nutrition">
+          </div>
+          <div class="col-md-6 col-lg-5 order-md-1 mt-md-n5 aos-init aos-animate" data-aos="fade-up" data-aos-duration="850" data-aos-offset="200" data-disable-parallax-down="md">
+           
+            <h2 class="mb-4">Optimize Your Diet for Better Performance</h2>
+            <p class="fs-lg mb-0 mb-lg-4">Tailor your nutritional intake with our range of supplements and healthy meal plans. Achieve your fitness goals with our expert guidance and high-quality products.</p>
+          </div>
+        </div>
+      
+        <!-- Supplies -->
+        <div class="row align-items-center py-4 my-2 my-md-3 my-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="600" data-aos-offset="300" data-disable-parallax-down="md">
+          <div class="col-md-6 col-lg-7">
+            <img class="d-dark-mode-none" src="./images/supplies.jpg" width="636" alt="Supplies">
+            <img class="d-none d-dark-mode-block" src="./images/supplies.jpg" width="636" alt="Supplies">
+          </div>
+          <div class="col-md-6 col-lg-5 mt-md-n4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="850" data-aos-offset="200" data-disable-parallax-down="md">
+            
+            <h2 class="mb-4">Equip Yourself with the Best Gear</h2>
+            <p class="fs-lg mb-0 mb-lg-4">Find all the gym equipment and accessories you need. From resistance bands to kettlebells, our supplies are designed to enhance your workout experience and help you stay on track.</p>
+          </div>
+        </div>
+      </section>
+      <!--contact-->
+      <section class="container" style="margin-top: -260px;" data-bs-theme="dark">
+        <div class="card border-0 bg-primary1 position-relative py-lg-4 py-xl-5" style="margin-top: 300px;">
+    
+            <!-- Decorative shapes -->
+            <svg class="position-absolute end-0 mt-n2" width="242" height="331" viewBox="0 0 242 331" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M172.014 250.127C137.236 227.74 112.349 192.144 144.586 153.591C157.686 137.932 176.759 127.973 196.524 122.046C234.647 110.639 277.027 113.361 313.349 129.576C338.19 140.666 361.129 159.183 369.934 184.502C383.476 223.496 359.75 260.161 321.569 273.118C288.832 284.223 247.685 279.513 214.885 269.837C201.003 265.743 185.745 258.966 172.014 250.127Z" fill="#121519" fill-opacity=".07"></path>
+                <path d="M20.3265 69.264C19.7064 43.0736 29.8071 17.1878 62.3851 19.8622C75.6229 20.9505 87.9525 27.2066 98.3563 35.3132C118.426 50.9253 132.424 73.896 136.952 98.6413C140.044 115.562 138.424 134.218 127.978 148C111.901 169.236 83.4531 170.283 62.5246 155.209C44.5807 142.281 32.0983 119.217 25.3391 98.6799C22.4836 89.9885 20.5616 79.6021 20.3265 69.264Z" fill="#121519" fill-opacity=".07"></path>
+            </svg>
+            
+            <div class="card-body position-relative z-2 py-5">
+                <form class="mx-auto" style="max-width: 800px;">
+                    <h2 class="h1 card-title text-center pb-4">Get Your Free Gym Pass</h2>
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <label class="form-label fs-base" for="name">Name</label>
+                            <input class="form-control form-control-lg" type="text" placeholder="Your name" required="" id="name">
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="form-label fs-base" for="goal">Fitness Goal</label>
+                            <input class="form-control form-control-lg" type="text" placeholder="Your fitness goal" id="goal">
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="form-label fs-base" for="email">Email</label>
+                            <input class="form-control form-control-lg" type="email" placeholder="Email address" required="" id="email">
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="form-label fs-base" for="phone">Phone</label>
+                            <input class="form-control form-control-lg" type="text" placeholder="Phone number" id="phone">
+                        </div>
+                        <div class="col-sm-12">
+                            <label class="form-label fs-base" for="message">How can we help you achieve your goals?</label>
+                            <textarea class="form-control form-control-lg" rows="6" placeholder="Enter your message here..." required="" id="message"></textarea>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="personal-training">
+                                <label class="form-check-label fs-base" for="personal-training">Personal Training</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="group-classes" checked="">
+                                <label class="form-check-label fs-base" for="group-classes">Group Classes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="nutrition-plans">
+                                <label class="form-check-label fs-base" for="nutrition-plans">Nutrition Plans</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="online-coaching">
+                                <label class="form-check-label fs-base" for="online-coaching">Online Coaching</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 text-center pt-4">
+                            <button class="btn btn-lg btn-light" type="submit">Request Free Pass</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 p-4 text-center">
+        <p>&copy; 2024 Gym. All Rights Reserved.</p>
+        <p>Follow us on:
+            <span class="footer-icons">
+                <a href="#" class="text-white ml-2"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-white ml-2"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#" class="text-white ml-2"><i class="fa-brands fa-square-x-twitter"></i></a>
+            </span>
+        </p>
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const registerBtn = document.getElementById('registerBtn');
+        const registrationSection = document.getElementById('registration');
+        const form = document.getElementById('registrationForm');
+
+        registerBtn.addEventListener('click', (event) => {
+            //event.preventDefault();
+            
+            if(registrationSection.style.display === 'none')
+                registrationSection.style.display = 'block';
+            
+            else
+                registrationSection.style.display = 'none';
+                
+            
+        });
+
+        
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            alert('Registration successful!');
+            form.reset();
+            registrationSection.style.display = 'none';
+        });
+    });
+
+        $(".hover").mouseleave(
+        function () {
+            $(this).removeClass("hover");
+        }
+        );
+        
+       AOS.init();
+
+    
+    </script>
+</body>
+</html>
